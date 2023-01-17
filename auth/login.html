@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome!</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        img {
+            /* Width must be set to the viewport width */
+            width: 215px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        p {
+            width: auto;
+            height: auto;
+            font-size: medium;
+            font-family: 'Segoe UI';
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Segoe UI';
+            font-size: x-large;
+            text-align: center;
+        }
+        button {
+            align-self: center;
+            font-family: 'Segoe UI';
+            font-size: large;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+    <h1>Cloud Account Authorization</h1>
+    <p>To authorize Cloud Account, please select a cloud provider.</p>
+    <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=c097ff5b-8892-4d71-8fe2-e3ad2682b394&scope=Files.ReadWrite.All&response_type=token&redirect_uri=https://alexavil.github.io/onedrive-telegram-web/success.html">
+        <img src="img/Microsoft_Button.png">
+    </a><br>
+    <a href="https://oauth.yandex.ru/authorize?response_type=token&client_id=0fa7c16bc1144d029d07dc91f0bfe8a1&redirect_uri=https://tgramcloud.github.io/TGramCloud-Web/success.html">
+        <img src="img/Yandex_Button.png">
+    </a>
+    
+</body>
