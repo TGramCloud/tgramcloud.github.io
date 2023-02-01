@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <head>
-    <title>Please wait...</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Please wait...</title>
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1"
+  />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <style>
-        img {
-            /* Width must be set to the viewport width */
-            width: 100%;
-            height: 50%;
-        }
-        p {
-            width: auto;
-            height: auto;
-            font-size: medium;
-            font-family: 'Segoe UI';
-            text-align: center;
-        }
-        h1 {
-            font-family: 'Segoe UI';
-            font-size: x-large;
-            text-align: center;
-        }
-        input {
-            align-self: center;
-            font-family: 'Segoe UI';
-            font-size: large;
-            text-align: center;
-            width: 100%;
-            height: auto;
-        }
-        button {
-            align-self: center;
-            font-family: 'Segoe UI';
-            font-size: large;
-            text-align: center;
-            width: 100%;
-            height: auto;
-            background-color: blueviolet;
-            color: white;
-        }
-    </style>
-    <h1>Please wait while we fetch your token...</h1>
-    <p>This may take a moment...</p>
-    <script>
-        var hash = window.location.hash.split('=')[1] || window.location.href.split('=')[1];
-        var code = hash.split('&')[0];
-        fetch(`https://oauth.yandex.ru/authorize?grant_type=authorization_code&code=${code}&client_id=0fa7c16bc1144d029d07dc91f0bfe8a1&client_secret=3601122302454e6eb23742056606cb0a`, {
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        })
-            .then((response) => response.json())
-            .then((data) => console.log(data));
-    </script>
+  <style>
+    img {
+      /* Width must be set to the viewport width */
+      width: 100%;
+      height: 50%;
+    }
+    p {
+      width: auto;
+      height: auto;
+      font-size: medium;
+      font-family: "Segoe UI";
+      text-align: center;
+    }
+    h1 {
+      font-family: "Segoe UI";
+      font-size: x-large;
+      text-align: center;
+    }
+    input {
+      align-self: center;
+      font-family: "Segoe UI";
+      font-size: large;
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
+    button {
+      align-self: center;
+      font-family: "Segoe UI";
+      font-size: large;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      background-color: blueviolet;
+      color: white;
+    }
+  </style>
+  <h1>Please wait while we fetch your token...</h1>
+  <p>This may take a moment...</p>
+  <script>
+    var hash =
+      window.location.hash.split("=")[1] || window.location.href.split("=")[1];
+    var code = hash.split("&")[0];
+  </script>
 </body>
